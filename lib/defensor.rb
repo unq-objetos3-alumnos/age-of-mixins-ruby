@@ -1,4 +1,4 @@
-class Defensor
+module Defensor
   attr_reader :vida
   attr_reader :defensa
 

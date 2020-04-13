@@ -1,16 +1,13 @@
+require "atacante"
 require "defensor"
 
-class Guerrero < Defensor
-  def initialize(fuerza:, defensa:, vida:)
+class Guerrero
+  include Atacante
+  include Defensor
+
+  def initialize(fuerza:, **args)
+    super(**args)
     @fuerza = fuerza
-    @defensa = defensa
-    @vida = vida
-  end
-
-  def atacar_a(otra_unidad)
-    raise "una unidad no puede atacarse a sí misma" if self == otra_unidad
-
-    otra_unidad.recibir_daño(ataque)
   end
 
   def ataque

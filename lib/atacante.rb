@@ -1,4 +1,4 @@
-class Atacante
+module Atacante
   def atacar_a(defensor)
     raise "una unidad no puede atacarse a sí misma" if self == defensor
 

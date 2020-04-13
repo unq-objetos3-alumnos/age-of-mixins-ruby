@@ -1,5 +1,5 @@
 require "defensor"
 
-class Muralla < Defensor
-
+class Muralla
+  include Defensor
 end

@@ -1,6 +1,8 @@
 require "atacante"
 
-class Fantasma < Atacante
+class Fantasma
+  include Atacante
+
   def ataque
     20
   end
