@@ -1,5 +1,9 @@
-require "defensor"
+require "unidad"
 
-class Muralla < Defensor
+class Muralla < Unidad
+  private
 
+  def defensor?
+    true
+  end
 end

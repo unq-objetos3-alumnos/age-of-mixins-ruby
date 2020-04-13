@@ -1,7 +1,13 @@
-require "atacante"
+require "unidad"
 
-class Fantasma < Atacante
+class Fantasma < Unidad
   def ataque
     20
+  end
+
+  private
+
+  def atacante?
+    true
   end
 end
