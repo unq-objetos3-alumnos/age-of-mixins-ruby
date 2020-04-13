@@ -1,17 +1,18 @@
-class Guerrero
+class Espadachin
   attr_reader :vida
   attr_reader :defensa
 
-  def initialize(fuerza:, defensa:, vida:)
+  def initialize(fuerza:, defensa:, vida:, coeficiente_espada:)
     @fuerza = fuerza
     @defensa = defensa
     @vida = vida
+    @coeficiente_espada = coeficiente_espada
   end
 
   def atacar_a(otra_unidad)
     raise "una unidad no puede atacarse a sí misma" if self == otra_unidad
 
-    otra_unidad.recibir_daño(@fuerza)
+    otra_unidad.recibir_daño(@fuerza * @coeficiente_espada)
   end
 
   def recibir_daño(cantidad_de_daño)
