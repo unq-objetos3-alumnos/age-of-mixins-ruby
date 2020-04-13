@@ -2,7 +2,7 @@ class Espadachin
   attr_reader :vida
   attr_reader :defensa
 
-  def initialize(fuerza:, defensa:, vida:, coeficiente_espada:)
+  def initialize(fuerza:, defensa:, vida:, coeficiente_espada: 1)
     @fuerza = fuerza
     @defensa = defensa
     @vida = vida
