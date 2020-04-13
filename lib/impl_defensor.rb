@@ -1,4 +1,4 @@
-class Defensor
+class ImplDefensor
   attr_reader :vida
   attr_reader :defensa
 

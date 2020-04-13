@@ -1,7 +1,11 @@
-require "atacante"
+require "impl_atacante"
 
-class Fantasma < Atacante
-  def ataque
-    20
+class Fantasma
+  def initialize
+    @impl_atacante = ImplAtacante.new(self, 20)
+  end
+
+  def atacar_a(defensor)
+    @impl_atacante.atacar_a(defensor)
   end
 end

@@ -1,12 +1,8 @@
 require "guerrero"
 
 class Espadachin < Guerrero
-  def initialize(coeficiente_espada:, **args)
-    super(**args)
-    @coeficiente_espada = coeficiente_espada
-  end
-
-  def ataque
-    super * @coeficiente_espada
+  def initialize(fuerza:, coeficiente_espada:, **args)
+    super(fuerza: fuerza, **args)
+    @impl_atacante = ImplAtacante.new(self, fuerza * coeficiente_espada)
   end
 end
