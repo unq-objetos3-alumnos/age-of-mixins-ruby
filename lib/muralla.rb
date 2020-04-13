@@ -1,5 +1,5 @@
-require "unidad"
+require "defensor"
 
-class Muralla < Unidad
+class Muralla < Defensor
 
 end

@@ -1,4 +1,4 @@
-class Unidad
+class Defensor
   attr_reader :vida
   attr_reader :defensa
 

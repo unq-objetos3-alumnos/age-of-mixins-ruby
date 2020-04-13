@@ -1,10 +1,6 @@
-class Fantasma
-  def atacar_a(otra_unidad)
-    raise "una unidad no puede atacarse a sí misma" if self == otra_unidad
+require "atacante"
 
-    otra_unidad.recibir_daño(ataque)
-  end
-
+class Fantasma < Atacante
   def ataque
     20
   end

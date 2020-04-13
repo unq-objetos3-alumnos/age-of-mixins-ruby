@@ -1,6 +1,6 @@
-require "unidad"
+require "defensor"
 
-class Guerrero < Unidad
+class Guerrero < Defensor
   def initialize(fuerza:, defensa:, vida:)
     @fuerza = fuerza
     @defensa = defensa
