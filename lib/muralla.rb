@@ -1,5 +1,5 @@
-require "defensor"
+require "solo_defensor"
 
-class Muralla < Defensor
+class Muralla < SoloDefensor
 
 end

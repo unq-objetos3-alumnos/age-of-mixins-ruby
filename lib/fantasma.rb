@@ -1,6 +1,6 @@
-require "atacante"
+require "solo_atacante"
 
-class Fantasma < Atacante
+class Fantasma < SoloAtacante
   def ataque
     20
   end
