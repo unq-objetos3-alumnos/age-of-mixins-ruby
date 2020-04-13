@@ -1,4 +1,4 @@
-require "guerrero"
+require "factory_methods"
 
 describe "guerreros" do
   specify "cuando un guerrero ataca a otro que no tiene defensa, el daño es igual a la fuerza del atacante" do
@@ -43,9 +43,5 @@ describe "guerreros" do
     expect do
       guerrero.atacar_a(guerrero)
     end.to raise_error("una unidad no puede atacarse a sí misma")
-  end
-
-  def un_guerrero_con(fuerza: 0, defensa: 0, vida: 100)
-    Guerrero.new(fuerza: fuerza, defensa: defensa, vida: vida)
   end
 end
