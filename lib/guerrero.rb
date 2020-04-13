@@ -1,7 +1,6 @@
-class Guerrero
-  attr_reader :vida
-  attr_reader :defensa
+require "muralla"
 
+class Guerrero < Muralla
   def initialize(fuerza:, defensa:, vida:)
     @fuerza = fuerza
     @defensa = defensa
@@ -16,10 +15,5 @@ class Guerrero
 
   def ataque
     @fuerza
-  end
-
-  def recibir_daño(cantidad_de_daño)
-    daño_final = (cantidad_de_daño - @defensa).clamp(0, @vida)
-    @vida -= daño_final
   end
 end
