@@ -1,4 +1,6 @@
-class Defensor
+require "atacante"
+
+class Defensor < Atacante
   attr_reader :vida
   attr_reader :defensa
 
