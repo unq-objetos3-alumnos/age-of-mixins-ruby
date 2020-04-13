@@ -1,6 +1,6 @@
+require "unidad"
 require "guerrero"
 require "espadachin"
-require "muralla"
 
 def un_guerrero_con(fuerza: 0, defensa: 0, vida: 100)
   Guerrero.new(fuerza: fuerza, defensa: defensa, vida: vida)
@@ -11,5 +11,5 @@ def un_espadachin_con(fuerza: 0, defensa: 0, vida: 100, coeficiente_espada: 1)
 end
 
 def una_muralla_con(defensa: 0, vida: 100)
-  Muralla.new(defensa: defensa, vida: vida)
+  Unidad.new(defensa: defensa, vida: vida)
 end

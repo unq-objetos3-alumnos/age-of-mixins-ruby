@@ -1,4 +1,4 @@
-class Muralla
+class Unidad
   attr_reader :vida
   attr_reader :defensa
 
