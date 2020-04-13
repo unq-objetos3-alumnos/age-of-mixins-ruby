@@ -1,4 +1,4 @@
-require "espadachin"
+require "guerrero"
 
 describe "espadachines" do
   specify "incrementan su ataque según el coeficiente de su espada" do
@@ -38,6 +38,6 @@ describe "espadachines" do
   end
 
   def un_espadachin_con(fuerza: 0, defensa: 0, vida: 100, coeficiente_espada: 1)
-    Espadachin.new(fuerza: fuerza, defensa: defensa, vida: vida, coeficiente_espada: coeficiente_espada)
+    Guerrero.new(fuerza: fuerza, defensa: defensa, vida: vida, coeficiente_espada: coeficiente_espada)
   end
 end
